@@ -1,3 +1,7 @@
+尝试用后缀表达式来重新分解 equivalent 的语法。
+
+- equivalent 现在的设计太复杂了。
+
 # cicada
 
 > 坚持设计类 JS 语法的语言：
