@@ -1,6 +1,6 @@
-import type { Token } from "@cicada-lang/partech"
 import type { Exp } from "../exp/Exp.js"
 import { choose, loopUntilFail, type ParserResult } from "./Parser.js"
+import type { Token } from "./Token.js"
 
 export function parseExp(tokens: Array<Token>): ParserResult<Exp> {
   return choose<Exp>([parseOperator, parseOperand])(tokens)
