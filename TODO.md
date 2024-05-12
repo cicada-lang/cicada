@@ -8,6 +8,10 @@ inference rules
   - 好像是所有论文中的 inference rule 都只会用 Exp，
     而不会用 Value 和 closure。
 
+# problem
+
+为什么 "the little typer" 的 `induction` 关键词需要 `motive`？
+
 # equivalent
 
 尝试用后缀表达式来重新分解 equivalent 的语法。
