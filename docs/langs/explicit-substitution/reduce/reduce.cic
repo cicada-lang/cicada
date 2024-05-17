@@ -17,8 +17,8 @@
        [(just defintion) an-exp]
        [nothing (reduce a-mod defintion.exp)])]
     [(fn-exp name ret)
-      (fn-exp an-exp.name (reduce a-mod ret))]
+     (fn-exp an-exp.name (reduce a-mod ret))]
     [(ap-exp target arg)
-      (do-ap a-mod (reduce a-mod target) (reduce a-mod arg))]
+     (do-ap a-mod (reduce a-mod target) (reduce a-mod arg))]
     [(let-exp bindings body)
-      (reduce a-mod (substitute body bindings))]))
+     (reduce a-mod (substitute body bindings))]))

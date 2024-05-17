@@ -17,8 +17,8 @@
        [(Maybe::Just defintion) exp]
        [Maybe::Nothing (reduce mod defintion.exp)])]
     [(Exp::Fn name ret)
-      (Exp::Fn exp.name (reduce mod ret))]
+     (Exp::Fn exp.name (reduce mod ret))]
     [(Exp::Ap target arg)
-      (do-ap mod (reduce mod target) (reduce mod arg))]
+     (do-ap mod (reduce mod target) (reduce mod arg))]
     [(Exp::Let bindings body)
-      (reduce mod (substitute body bindings))]))
+     (reduce mod (substitute body bindings))]))
