@@ -1,3 +1,10 @@
+# explicit-substitution
+
+[explicit-substitution] `do-ap`
+[explicit-substitution] `substitute`
+
+# exp
+
 设计新的稳定的 Exp
 
 inference rules
