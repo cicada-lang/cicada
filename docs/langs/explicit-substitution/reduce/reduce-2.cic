@@ -15,7 +15,7 @@
     [(Exp::Var name)
      (match (mod-find mod name)
        [(Maybe::Just defintion) exp]
-       [(Maybe::Nothing) (reduce mod defintion.exp)])]
+       [Maybe::Nothing (reduce mod defintion.exp)])]
     [(Exp::Fn name ret)
       (Exp::Fn exp.name (reduce mod ret))]
     [(Exp::Ap target arg)
