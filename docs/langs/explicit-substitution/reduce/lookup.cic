@@ -1,0 +1,9 @@
+(import binding exp "../exp/index.cic")
+
+(claim lookup (-> string (list binding) (maybe exp)))
+(define (lookup name bindings)
+  (let ((found
+         (list-find
+           (list-reverse bindings)
+           (lambda (b) (string-equal b.name name)))))
+  (maybe-map found (lambda (b) b.exp))))
