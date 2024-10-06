@@ -1,12 +1,4 @@
-# std
+在 cicada 中，用最简单的 dependent type Exp 实验 type check by propagator
 
-[std] boolean-lattice/ -- absorb.cic
-[std] boolean-lattice/ -- associative.todo.cic
-[std] boolean-lattice/ -- boolean-domain.cic
-[std] boolean-lattice/ -- boolean-lattice.cic
-[std] boolean-lattice/ -- bound.cic
-[std] boolean-lattice/ -- dual.cic
-[std] boolean-lattice/ -- dual-involutive.cic
-[std] boolean-lattice/ -- idempotent.cic
-[std] boolean-lattice/ -- order.cic
-[std] boolean-lattice/ -- unique-id.cic
+- 还是需要 Exp Value Neutral，但是不用 Core
+- [maybe] 保留 check 和 infer 这些函数的 interface，但是用 propagator 实现？
