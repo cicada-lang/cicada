@@ -2,3 +2,5 @@
 
 - 还是需要 Exp Value Neutral，但是不用 Core
 - [maybe] 保留 check 和 infer 这些函数的 interface，但是用 propagator 实现？
+
+语法 -- 回到数学的语法 f(x)，不一定要模仿 JS。
